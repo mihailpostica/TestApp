@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+
+
+
+@section Scripts
+{
+
+
+    <script>
+        function onSignIn(googleUser) {
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log(id_token);
+        }
+
+    </script>
+}
+
