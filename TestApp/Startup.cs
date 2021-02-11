@@ -46,7 +46,7 @@ namespace Test
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "SooYunApi", Version = "V1" });
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "RetroAPI", Version = "V1" });
 
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
